@@ -1,0 +1,634 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\usepackage[normalem]{ulem}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\includegraphics[width=3.24959in,height=1.58314in]{Media/media/image1.png}
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\textbf{\uline{Projet :}}
+
+\textbf{\uline{Med-E-sell : Being closer to our suppliers}}
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\textbf { Presenté par : \begin{itemize}
+    \item Hamid Zakariaa
+    \item Morjane Moncef
+    \item Safa Taha
+    \item Tigmouti Mouad.\\
+\end{itemize} }
+\textbf { Encadré par : Pr. EL Hamlaoui Mahmoud }
+\newpage
+\begin{quote}
+\textbf{\uline{Remerciements :}}
+\end{quote}
+
+\textbf{Nous tenons à exprimer notre gratitude à toutes les personnes
+qui ont contribué à la réalisation de ce projet. Tout
+d\textquotesingle abord, Nous voudrons remercier Note professeur EL
+hamlaoui Mahmoud} \textbf{pour son soutien et son expertise tout au long
+de ce travail innovatif. Sa contribution a été inestimable pour la
+réussite de ce projet.}
+
+\textbf{Nous voudrions exprimer notre gratitude envers nos collègues
+pour leur collaboration et leur contribution à ce projet. Leur travail
+acharné et leur engagement ont permis d\textquotesingle atteindre nos
+objectifs et de livrer un travail de qualité.}
+
+\textbf{Nous sommes reconnaissants envers les organisations/personnes
+qui ont fourni des ressources ou des données pour leur soutien et leur
+contribution à ce projet. Leurs ressources et données ont été
+d\textquotesingle une grande aide pour mener à bien cette étude.}
+
+\textbf{Enfin, nous tenons à remercier toutes les personnes qui ont
+contribué à ce projet, directement ou indirectement. Votre contribution
+a été inestimable et a permis de mener à bien ce projet de manière
+efficace et efficiente.}
+\newpage
+
+\textbf{Table de matière}
+
+\textbf{1-Introduction:............................................................................................................................................4}
+
+\textbf{1-1 Présentation brève du projet :..............................................................................................................4}
+
+\textbf{1-2 Problématique :........................................................................................................................................4}
+
+\textbf{2-Contexte et Objectifs :..................................................................................................................................4}
+
+\textbf{3-Présentation de projet :.................................................................................................................................4}
+
+\textbf{4-Analyse fonctionnelle :..................................................................................................................................5}
+
+\textbf{5-Front-end :..............................................................................................................................................5}
+
+\textbf{5-1 HTML :.................................................................................................................................................5}
+
+\textbf{5-2 CSS:...................................................................................................................................................5}
+
+\textbf{5-3 JavaScript:............................................................................................................................................6}
+
+\textbf{5-4 Bootstrap :............................................................................................................................................6}
+
+\textbf{5-5 HTML to PDF :..........................................................................................................................................6}
+
+\textbf{6-Back-end :...............................................................................................................................................6}
+
+\textbf{7-Outils :.................................................................................................................................................7}
+
+\textbf{8-Structure du backend~:...................................................................................................................................7}
+
+\textbf{8-1 Structure de la base de données :..................................................................................................................7}
+
+\textbf{9-Structure du frontend~:..................................................................................................................................8}
+
+\textbf{10- Valeur ajoutée~:......................................................................................................................................13}
+
+\textbf{11- Conclusion~:...........................................................................................................................................14}
+
+\textbf{12- Abstract~:.............................................................................................................................................14}
+
+\textbf{13- Bibliographie:.............................................................................................................................................14}
+
+\newpage
+\hypertarget{introduction}{%
+\section{\texorpdfstring{\textbf{\uline{1-Introduction:}}}{1-Introduction:}}\label{introduction}}
+
+\textbf{La digitalisation a métamorphosé plusieurs secteurs économiques,
+et l\textquotesingle industrie pharmaceutique ne fait pas exception.
+Dans le cadre d\textquotesingle un projet novateur, nous avons initié le
+développement d\textquotesingle une application web visant à simplifier
+la liaison entre fournisseurs de produits pharmaceutiques et pharmacies.
+Cette initiative s\textquotesingle inscrit dans une dynamique de
+modernisation et d\textquotesingle optimisation des processus pour
+répondre aux évolutions constantes du secteur}
+
+\textbf{\uline{1-1 Présentation brève du projet :}}
+
+\textbf{L\textquotesingle application vise à simplifier la gestion des
+stocks, des commandes, et à optimiser les flux logistiques. Elle aspire
+à réduire les délais, accroître la précision des commandes, et renforcer
+les liens entre les différents maillons de la chaîne
+d\textquotesingle approvisionnement. Elle permet une communication
+instantanée entre les acteurs, favorisant ainsi une meilleure
+coordination des approvisionnements. En offrant une visibilité en temps
+réel sur les stocks, elle facilite la gestion proactive des
+approvisionnements.}
+
+\textbf{\uline{1-2- Problématique :}}
+
+\textbf{\uline{Comment cette application va-t-elle aider les
+pharmacies~?}}
+
+\begin{itemize}
+\item
+  \textbf{Cette application permettra aux pharmacies de gérer plus
+  efficacement leurs stocks et leurs commandes, réduisant ainsi les
+  erreurs et les délais.}
+\end{itemize}
+
+\textbf{\uline{Quels sont les principaux défis du développement
+d\textquotesingle une telle application ?}}
+
+\begin{itemize}
+\item
+  \textbf{Certains défis incluent la sécurité des données,
+  l\textquotesingle intégration avec les systèmes existants et
+  l\textquotesingle adoption par les utilisateurs.}
+\end{itemize}
+
+\textbf{\uline{Est-ce que cette application est adaptable à différentes
+échelles d\textquotesingle entreprises pharmaceutiques ?}}
+
+\begin{itemize}
+\item
+  \textbf{Oui, elle est conçue pour être adaptable, aussi bien pour de
+  petites pharmacies indépendantes que pour de grandes chaînes
+  pharmaceutiques.}
+\end{itemize}
+
+\textbf{\uline{Comment l\textquotesingle application contribue-t-elle à
+réduire les délais de livraison ?}}
+
+\begin{itemize}
+\item
+  \textbf{En favorisant une communication instantanée, elle permet de
+  réduire les délais de traitement des commandes et
+  d\textquotesingle améliorer la logistique de livraison, grâce à la
+  génération du PDF de confirmation de commande entre pharmacie et
+  fournisseur.}
+\end{itemize}
+
+\textbf{\uline{2- Contexte et Objectifs :}}
+
+\textbf{Dans un monde en évolution constante,
+l\textquotesingle industrie pharmaceutique se trouve confrontée à des
+défis nouveaux et complexes. La demande croissante de produits
+pharmaceutiques, conjuguée à la nécessité de rationaliser les processus
+d\textquotesingle approvisionnement, a incité à repenser
+fondamentalement la façon dont les fournisseurs interagissent avec les
+pharmacies. C\textquotesingle est dans ce contexte de changement
+dynamique que l\textquotesingle idée d\textquotesingle une application
+web novatrice a vu le jour.}
+
+\textbf{La digitalisation a émergé comme une réponse incontournable pour
+moderniser l\textquotesingle industrie pharmaceutique, lui permettant de
+s\textquotesingle adapter rapidement aux évolutions du marché.}
+
+\textbf{L\textquotesingle initiative de créer une application web a
+émergé de la nécessité de simplifier et de rationaliser les processus
+d\textquotesingle approvisionnement en produits pharmaceutiques. Les
+défis antérieurs, tels que les retards dans la gestion des stocks, les
+erreurs de commandes et la complexité des interactions entre
+fournisseurs et pharmacies, ont souligné l\textquotesingle urgence
+d\textquotesingle une solution innovante.}
+
+\textbf{Le projet s\textquotesingle est enraciné dans une volonté
+commune de créer un écosystème virtuel où les échanges entre les acteurs
+de la chaîne d\textquotesingle approvisionnement pharmaceutique se
+déroulent de manière transparente et efficace.
+L\textquotesingle objectif principal était de mettre en place une
+plateforme permettant aux fournisseurs de communiquer directement avec
+les pharmacies, éliminant ainsi les intermédiaires et les délais
+inutiles.}
+
+\textbf{Cette application web ambitieuse vise à résoudre plusieurs
+problèmes sous-jacents. En effet, la gestion des stocks représentait un
+défi majeur pour les pharmacies, avec des difficultés à estimer les
+besoins réels et à anticiper les commandes en fonction de la demande. De
+même, pour les fournisseurs, la synchronisation des stocks avec les
+commandes réelles des pharmacies s\textquotesingle avérait complexe,
+entraînant des retards et des erreurs.}
+
+\textbf{Le contexte réglementaire strict de l\textquotesingle industrie
+pharmaceutique a également été un facteur crucial à considérer lors de
+la conception de cette application. La sécurité des données, la
+conformité aux normes en vigueur et la protection des informations
+sensibles ont été des priorités absolues tout au long du processus de
+développement.}
+
+\textbf{En outre, les avancées technologiques et la diversité des
+solutions disponibles ont offert un terrain fertile pour
+l\textquotesingle exploration de différentes approches dans la
+conception de cette application. Les choix technologiques ont été
+minutieusement examinés pour garantir une solution robuste, évolutive et
+adaptée aux besoins spécifiques du secteur pharmaceutique.}
+
+\textbf{\uline{3-Présentation de projet :}}
+
+\textbf{Notre projet ambitieux vise à révolutionner
+l\textquotesingle industrie pharmaceutique par le biais
+d\textquotesingle une application web novatrice, conçue pour simplifier
+et optimiser les processus d\textquotesingle approvisionnement. Cette
+initiative émerge de la nécessité de moderniser la façon dont les
+fournisseurs de produits pharmaceutiques interagissent avec les
+pharmacies, en proposant une plateforme innovante de communication et de
+gestion des stocks.}
+
+\textbf{La conception de l\textquotesingle application a été guidée par
+une attention particulière à la sécurité des données, à la conformité
+réglementaire et à la facilité d\textquotesingle utilisation pour les
+utilisateurs finaux. Chaque étape du processus de développement a été
+minutieusement pensée pour répondre aux besoins spécifiques du secteur
+pharmaceutique tout en offrant une interface conviviale et accessible.}
+
+\textbf{En résumé, notre projet d\textquotesingle application web
+représente une avancée significative dans la modernisation de
+l\textquotesingle industrie pharmaceutique. Il vise à simplifier les
+échanges entre fournisseurs et pharmacies, à réduire les délais, à
+améliorer la précision des commandes et à renforcer la fluidité des
+processus logistiques. Cette initiative s\textquotesingle inscrit dans
+une vision d\textquotesingle innovation et de transformation, offrant
+ainsi une plateforme dynamique pour répondre aux besoins évolutifs de
+l\textquotesingle industrie pharmaceutique}
+
+\textbf{\uline{4-Analyse fonctionnelle :}}
+
+\includegraphics[width=6.3in,height=3.54375in]{Media/media/image2.jpeg}
+
+\textbf{FIGURE 4 : Diagramme des cas d'utilisation}
+
+\textbf{\uline{5-Front-end
+:}}\includegraphics[width=0.54167in,height=0.54167in]{Media/media/image3.png}
+
+\hypertarget{html}{%
+\subsubsection{\texorpdfstring{\textbf{5-1HTML:}}{5-1HTML:}}\label{html}}
+
+\textbf{HTML est un langage de balisage utilisé pour créer des pages web
+et des applications web. Il permet de structurer le contenu de la page
+en utilisant des balises et des attributs qui décrivent la présentation
+et le contenu de la page. Les balises et les attributs sont compris par
+les navigateurs web qui les utilisent pour afficher le contenu de la
+page. HTML est un langage standardisé par le W3C et est largement
+utilisé dans la création de sites web et d\textquotesingle applications
+web.}
+
+\includegraphics[width=0.40903in,height=0.57569in]{Media/media/image4.png}\textbf{5-2
+CSS~:}
+
+\textbf{CSS est un langage de feuilles de style utilisé pour décrire la
+présentation et le style d\textquotesingle une page web écrite en HTML.
+Il permet de séparer la présentation de la structure du contenu
+d\textquotesingle une page web en utilisant des règles et des
+sélecteurs. Les règles CSS définissent des propriétés telles que la
+couleur, la police de caractères, la mise en page et les effets visuels,
+qui sont appliquées aux éléments HTML correspondants.}
+
+\includegraphics[width=0.97431in,height=0.71389in]{Media/media/image5.png}
+
+\textbf{5-3 Javascript :}
+
+\textbf{JavaScript est un langage de programmation orienté objet,
+interprété et de haut niveau, principalement utilisé pour créer des
+sites web interactifs et des applications côté client. Il peut être
+utilisé pour manipuler le contenu HTML et CSS, créer des animations,
+gérer les événements utilisateur, valider les formulaires, accéder à des
+données externes, etc. JavaScript est largement utilisé dans
+l\textquotesingle industrie du développement web et est considéré comme
+l\textquotesingle un des langages de programmation les plus populaires
+et les plus demandés.}
+
+\includegraphics[width=0.88542in,height=0.64306in]{Media/media/image6.png}\textbf{5-4
+Bootstrap :}
+
+\textbf{Bootstrap est un framework CSS open source développée par
+Twitter. Il fournit un ensemble de codes HTML, CSS et JavaScript
+pré-écrits et personnalisables pour faciliter la création de sites web
+réactifs et mobiles. Bootstrap comprend une grande variété de composants
+d\textquotesingle interface utilisateur tels que des boutons, des
+formulaires, des modèles, des barres de navigation, des carrousels, des
+grilles, etc. Il permet également de créer facilement des mises en page
+réactives qui s\textquotesingle adaptent automatiquement aux différents
+appareils et tailles d\textquotesingle écran. Grâce à sa popularité et à
+sa grande communauté de développeurs, Bootstrap est souvent utilisé pour
+accélérer le processus de développement et améliorer
+l\textquotesingle aspect visuel et fonctionnel des sites web.}
+
+\textbf{5-5 HTML to PDF~:}
+
+\textbf{wkhtmltopdf et wkhtmltoimage sont des outils open-source très
+utilisés pour convertir des pages web en fichiers PDF ou images
+respectivement. Ces outils utilisent le moteur de rendu WebKit pour
+capturer le contenu HTML/CSS d\textquotesingle une page web et le
+convertir en un fichier PDF ou une image statique.}
+
+\textbf{La méthode des binaires précompilés implique
+l\textquotesingle utilisation des versions précompilées de wkhtmltopdf
+et wkhtmltoimage pour différentes plates-formes, comme Windows, Linux ou
+macOS, sans avoir besoin de compiler le code source soi-même. Cela
+simplifie grandement le processus d\textquotesingle installation et
+d\textquotesingle utilisation de ces outils.}
+
+\hypertarget{back-end}{%
+\subsection{\texorpdfstring{\textbf{\uline{6-Back-end:}}}{6-Back-end:}}\label{back-end}}
+
+\includegraphics[width=0.63681in,height=0.47778in]{Media/media/image7.png}
+
+\textbf{Flask :}
+
+\textbf{Flask est un framework web pour Python qui permet de créer des
+applications web facilement. Il est léger et flexible, et fournit des
+fonctionnalités de base pour la création d\textquotesingle applications
+web, telles que la gestion des routes, les templates HTML, la
+manipulation de formulaires, la gestion des sessions et des cookies,
+ainsi que la connexion à une base de données.}
+
+\includegraphics[width=0.82917in,height=0.55972in]{Media/media/image8.png}\textbf{SQLITE
+:}
+
+\textbf{SQLite est un système de gestion de bases de données
+relationnelles open source qui permet de stocker et
+d\textquotesingle organiser des données dans des applications
+logicielles. Il est portable et facile à utiliser, prend en charge le
+langage SQL pour la manipulation de données, ainsi que des
+fonctionnalités telles que la création de tables, les relations, les
+index, les vues, les déclencheurs et les transactions. SQLite est
+souvent utilisé pour stocker des données dans des applications mobiles,
+des navigateurs web, des systèmes embarqués, des applications de bureau
+et d\textquotesingle autres types d\textquotesingle applications
+logicielles.}
+\newpage
+\includegraphics[width=0.47292in,height=0.39792in]{Media/media/image9.jpeg}\textbf{\uline{7-Outils
+:}}
+
+\textbf{VS Code :}
+
+\textbf{VS Code est un éditeur de code source gratuit et open source
+développée par Microsoft. Il est léger, personnalisable, offre des
+fonctionnalités avancées pour les développeurs et prend en charge de
+nombreux langages de programmation populaires. Il est souvent utilisé
+pour le développement web, le développement de logiciels et la science
+des données.}
+
+\includegraphics[width=0.49375in,height=0.43056in]{Media/media/image10.jpeg}
+\\
+\\
+\\
+\\
+\\
+\\
+\textbf{DB BROWSER :}
+
+\textbf{DB Browser est un logiciel open source gratuit qui permet de
+visualiser, de modifier et de gérer des bases de données SQLite. Il
+offre une interface graphique conviviale pour interagir avec les bases
+de données SQLite, ainsi que des fonctionnalités avancées telles que la
+création de tables, la modification des données,
+l\textquotesingle exécution de requêtes SQL,
+l\textquotesingle importation et l\textquotesingle exportation de
+données. DB Browser est souvent utilisé pour gérer et analyser des
+données stockées dans des bases de données SQLite.}
+
+\textbf{8-Structure du backend~:}
+
+\textbf{8-1. Structure de la base de données :}
+
+\includegraphics{Media/media/image11.png}
+\newpage
+\begin{flushleft}
+  \textbf{Structure de la table Product~:}
+  \includegraphics{Media/media/image12.png}
+\end{flushleft}
+\textbf{Structure de la table Users~:}
+
+\includegraphics[width=0.95847in,height=0.54174in]{Media/media/image13.png}\includegraphics{Media/media/image14.png}
+\newpage
+\textbf{9-Structure du frontend~:}
+
+\textbf{Voila la première page de notre palteforme~:}
+
+\begin{flushleft}
+  \includegraphics[width=6.28125in, height=3.13542in]{Media/media/image15.png}
+\end{flushleft}
+
+\textbf{On commence par créer un compte~: /register}
+
+\includegraphics{Media/media/image16.png}
+
+\textbf{Puis accéder à votre compte par remplir les cases suivantes~:
+/login}
+
+\includegraphics{Media/media/image17.png}
+
+\textbf{Après la connexion vous trouvez vous-même dans le Dashboard, ici
+vous pouvez contrôler la totalité de votre compte.}
+
+\textbf{/dash}
+
+\includegraphics{Media/media/image18.png}
+
+\textbf{Vous pouvez ajouter des produits par remplir cette forme~:}
+
+\includegraphics{Media/media/image19.png}
+
+\textbf{/home}
+
+\includegraphics[width=6.28125in,height=3.13542in]{Media/media/image15.png}
+
+\textbf{Génération d'un PDF de confirmation de commande~:}
+
+\includegraphics{Media/media/image20.png}
+
+\textbf{10- \uline{Valeur ajoutée}~:}
+
+\textbf{L\textquotesingle application web que nous développons apporte
+une valeur ajoutée significative à l\textquotesingle industrie
+pharmaceutique en simplifiant et en optimisant les processus
+d\textquotesingle approvisionnement, offrant ainsi une plateforme
+novatrice pour la communication et la gestion des stocks entre
+fournisseurs et pharmacies.}
+
+\textbf{\uline{Optimisation des Processus}}
+
+\textbf{L\textquotesingle une des valeurs clés de cette application
+réside dans son potentiel à rationaliser les processus opérationnels. En
+facilitant la liaison directe entre fournisseurs et pharmacies, elle
+élimine les inefficacités liées aux intermédiaires, réduisant ainsi les
+délais et les erreurs de commande. Cela permet aux pharmacies de gérer
+leurs stocks de manière proactive, en anticipant mieux les besoins réels
+et en évitant les ruptures de stock.}
+
+\textbf{\uline{Gestion Précise des Stocks}}
+
+\textbf{La visibilité en temps réel des stocks est une valeur ajoutée
+essentielle. Les pharmacies bénéficient d\textquotesingle une vue
+précise et actualisée de leurs inventaires, ce qui leur permet de
+planifier leurs commandes de manière plus précise. Cette gestion
+proactive minimise les risques de sur stockage ou de pénurie, optimisant
+ainsi l\textquotesingle efficacité et réduisant les coûts
+opérationnels.}
+
+\textbf{\uline{Amélioration de l\textquotesingle Efficacité
+Opérationnelle}}
+
+\textbf{En simplifiant les processus, cette application contribue à
+améliorer l\textquotesingle efficacité opérationnelle des pharmacies et
+des fournisseurs. La réduction des tâches administratives redondantes
+libère du temps pour se concentrer sur des activités à plus forte valeur
+ajoutée. De plus, la diminution des erreurs de commande et des retards
+de livraison permet une meilleure allocation des ressources et une
+satisfaction accrue des clients.}
+
+\textbf{\uline{Renforcement des Relations Professionnelles}}
+
+\textbf{Cette plateforme favorise également le renforcement des
+relations entre fournisseurs et pharmacies. En éliminant les barrières
+et en favorisant une interaction directe, elle crée un environnement
+propice à une collaboration étroite. Cette relation plus étroite peut
+conduire à des partenariats plus solides, à des négociations plus
+efficaces et à une compréhension plus profonde des besoins et des défis
+de chacun.}
+
+\textbf{\uline{Adaptabilité et Evolution}}
+
+\textbf{Un autre avantage clé réside dans la capacité de
+l\textquotesingle application à évoluer avec les besoins changeants de
+l\textquotesingle industrie pharmaceutique. La flexibilité et la
+modularité de cette plateforme permettent de l\textquotesingle adapter
+facilement aux nouvelles réglementations, aux évolutions technologiques
+et aux demandes spécifiques des utilisateurs, assurant ainsi sa
+pertinence à long terme.}
+
+\textbf{En somme, cette application web représente bien plus
+qu\textquotesingle une simple solution technique. Sa valeur ajoutée se
+manifeste à travers une efficacité accrue, une communication fluide, une
+gestion précise des stocks et un renforcement des relations
+professionnelles, contribuant ainsi à façonner un secteur pharmaceutique
+plus connecté, agile et performant.}
+
+\textbf{11- \uline{Conclusion}~:}
+
+\textbf{En conclusion, l\textquotesingle élaboration de cette
+application web représente une étape cruciale dans la transformation de
+l\textquotesingle industrie pharmaceutique. Ce projet novateur, axé sur
+la simplification et l\textquotesingle optimisation des processus
+d\textquotesingle approvisionnement, incarne une réponse audacieuse aux
+défis opérationnels persistants.}
+
+\textbf{L\textquotesingle application offre une valeur ajoutée
+incontestable à l\textquotesingle industrie en favorisant une
+communication directe entre fournisseurs et pharmacies, réduisant ainsi
+les délais, améliorant la précision des commandes et renforçant la
+gestion des stocks. Cette plateforme permet une gestion proactive des
+approvisionnements, minimisant les risques de surstockage ou de pénurie,
+et contribuant ainsi à une efficacité opérationnelle accrue.}
+
+\textbf{Outre ses bénéfices opérationnels, cette application favorise un
+environnement propice au renforcement des relations professionnelles,
+créant ainsi un terrain fertile pour des collaborations fructueuses et
+une meilleure compréhension mutuelle des besoins spécifiques de chaque
+acteur de la chaîne d\textquotesingle approvisionnement.}
+
+\textbf{Enfin, sa capacité d\textquotesingle adaptation et
+d\textquotesingle évolution constante assure sa pertinence à long terme,
+répondant ainsi aux évolutions rapides de l\textquotesingle industrie
+pharmaceutique. Dans l\textquotesingle ensemble, cette application web
+représente bien plus qu\textquotesingle un simple outil technologique ;
+elle incarne une vision d\textquotesingle efficacité,
+d\textquotesingle innovation et de connectivité, contribuant à façonner
+un avenir prometteur pour l\textquotesingle industrie pharmaceutique.}
+
+\textbf{12- \uline{Abstract}~:}
+
+\textbf{Cette initiative novatrice vise à simplifier les processus
+d\textquotesingle approvisionnement en créant une plateforme favorisant
+la communication directe entre fournisseurs et pharmacies.
+L\textquotesingle application offre une gestion proactive des stocks,
+réduisant ainsi les délais de livraison et améliorant la précision des
+commandes. Sa valeur ajoutée réside dans sa capacité à renforcer les
+relations professionnelles en favorisant une collaboration étroite entre
+les acteurs de la chaîne d\textquotesingle approvisionnement. De plus,
+sa flexibilité et sa capacité d\textquotesingle évolution constante
+garantissent sa pertinence à long terme, s\textquotesingle adaptant aux
+évolutions rapides de l\textquotesingle industrie pharmaceutique. En
+somme, cette application incarne une réponse stratégique aux défis
+opérationnels de l\textquotesingle industrie, offrant une efficacité
+accrue et une connectivité renforcée pour façonner un secteur
+pharmaceutique plus performant et agile.}
+
+\textbf{13- \uline{Bibliographie}~:}
+
+\href{https://flask.palletsprojects.com/en/2.0.x/tutorial/}{\textbf{https://flask.palletsprojects.com/en/2.0.x/tutorial/}}
+
+\href{https://www.sqlite.org/docs.html}{\textbf{https://www.sqlite.org/docs.html}}
+
+\href{https://scikit-learn.org/stable/modules/classes.html\#module-sklearn.neighbors}{\textbf{https://scikit-learn.org/stable/modules/classes.html\#module-sklearn.neighbors}}
+
+\href{https://wkhtmltopdf.org/}{\textbf{https://wkhtmltopdf.org/}}
+
+\end{document}
