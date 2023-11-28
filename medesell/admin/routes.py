@@ -8,7 +8,6 @@ from flask_login import login_required, current_user, login_user
 from medesell import app, db, bcrypt
 from .forms import RegistrationForm, LoginForm
 from .models import *
-from .colfil import colfil
 import os, json
 from sqlalchemy import desc, create_engine
 
